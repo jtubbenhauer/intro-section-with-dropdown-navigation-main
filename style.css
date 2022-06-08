@@ -13,10 +13,16 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+button {
   font-family: "Epilogue", sans-serif;
   font-size: 18px;
   font-weight: 500;
+  border: none;
+}
+
+body {
+  background-color: var(--almost-white);
 }
 
 .container {
@@ -35,8 +41,73 @@ body {
 .navbar {
   float: top;
   display: flex;
-  width: 100%;
+  width: 100vw;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+h1.header {
+  font-size: 2rem;
+  color: var(--almost-black);
+  padding: 1.5rem 0 1rem;
+}
+
+p.subheader {
+  font-size: 1rem;
+  color: var(--medium-gray);
+}
+
+button.button {
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  border-radius: 0.9rem;
+  border: none;
+  font-size: 0.9rem;
+  padding: 14px 23px;
+  margin: 1rem 0 2rem;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.client-img {
+  max-width: 4rem;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 100ms, opacity 100ms linear;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--almost-white);
+  width: 65%;
+}
+
+.shadow {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 100ms, opacity 100ms, linear;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0);
+}
+
+.close-button {
+  background-color: transparent;
+  float: right;
+  padding: 1rem 1rem;
 }
