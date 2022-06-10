@@ -40,7 +40,7 @@ body {
 }
 
 .hero-image-mobile {
-  width: 100vw;
+  width: 375px;
 }
 
 .navbar {
@@ -65,6 +65,7 @@ h1.header {
 p.subheader {
   font-size: 1rem;
   color: var(--medium-gray);
+  max-width: 400px;
 }
 
 button.button {
@@ -103,6 +104,7 @@ button.button {
   bottom: 0;
   background-color: var(--almost-white);
   width: 65%;
+  max-width: 235px;
 }
 
 .shadow {
@@ -123,13 +125,13 @@ button.button {
 
 .menu-items {
   list-style: none;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   font-size: 0.9rem;
   color: var(--medium-gray);
 }
 
 .menu-item {
-  padding: 0 0 1.5rem 1rem;
+  padding: 0 0 1.7rem 1.2rem;
 }
 
 .btn-login {
@@ -152,8 +154,33 @@ button.button {
 .dropdown {
   list-style: none;
   display: none;
+  padding-top: 0.6rem;
 }
 
 #features {
   display: none;
+}
+
+.arrow {
+  padding-left: 0.8rem;
+}
+
+.dropdown-item {
+  padding-top: 1rem;
+}
+
+.dropdown-icon {
+  margin-left: 1.2rem;
+  margin-right: 1rem;
+  width: 1rem;
+}
+
+.no-icon {
+  margin: 0 0 0.3rem 16px;
+}
+
+@media screen and (min-width: 801px) {
+  .hamburger {
+    display: none;
+  }
 }

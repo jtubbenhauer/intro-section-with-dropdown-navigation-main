@@ -28,21 +28,58 @@
             <a href="#" onclick="handleDropdown('features')"
               >Features
               <img
+                class="arrow"
                 id="features-down"
                 src="./images/icon-arrow-down.svg"
                 style="display: inline-block" /><img
+                class="arrow"
                 id="features-up"
                 src="./images/icon-arrow-up.svg"
                 style="display: none"
             /></a>
             <ul class="dropdown" id="features">
-              <li class="menu-item">Todo List</li>
-              <li class="menu-item">Calendar</li>
-              <li class="menu-item">Reminders</li>
-              <li class="menu-item">Planning</li>
+              <li class="dropdown-item">
+                <img class="dropdown-icon" src="./images/icon-todo.svg" />Todo
+                List
+              </li>
+              <li class="dropdown-item">
+                <img
+                  class="dropdown-icon"
+                  src="./images/icon-calendar.svg"
+                />Calendar
+              </li>
+              <li class="dropdown-item">
+                <img
+                  class="dropdown-icon"
+                  src="./images/icon-reminders.svg"
+                />Reminders
+              </li>
+              <li class="dropdown-item">
+                <img
+                  class="dropdown-icon"
+                  src="./images/icon-planning.svg"
+                />Planning
+              </li>
             </ul>
           </li>
-          <li class="menu-item"><a href="#">Company</a></li>
+          <li class="menu-item">
+            <a href="#" onclick="handleDropdown('company')"
+              >Company<img
+                class="arrow"
+                id="company-down"
+                src="./images/icon-arrow-down.svg"
+                style="display: inline-block" /><img
+                class="arrow"
+                id="company-up"
+                src="./images/icon-arrow-up.svg"
+                style="display: none"
+            /></a>
+            <ul class="dropdown" id="company">
+              <li class="dropdown-item no-icon">History</li>
+              <li class="dropdown-item no-icon">Our Team</li>
+              <li class="dropdown-item no-icon">Blog</li>
+            </ul>
+          </li>
           <li class="menu-item"><a href="#">Careers</a></li>
           <li class="menu-item"><a href="#">About</a></li>
         </ul>

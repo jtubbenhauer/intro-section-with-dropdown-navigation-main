@@ -18,9 +18,15 @@ const closeMenuHandler = () => {
 
 const handleDropdown = (id) => {
   const dropdown = document.getElementById(id);
+  const downArrow = document.getElementById(id + "-down");
+  const upArrow = document.getElementById(id + "-up");
   if (dropdown.style.display === "block") {
     dropdown.style.display = "none";
+    downArrow.style.display = "inline-block";
+    upArrow.style.display = "none";
   } else {
     dropdown.style.display = "block";
+    downArrow.style.display = "none";
+    upArrow.style.display = "inline-block";
   }
 };
