@@ -95,30 +95,104 @@
           id="hamburger"
           onclick="openMenuHandler()"
         />
+        <ul class="menu-items desktop-menu">
+          <li class="menu-item">
+            <a href="#" onclick="handleDropdown('features')"
+              >Features
+              <img
+                class="arrow"
+                id="features-down"
+                src="./images/icon-arrow-down.svg"
+                style="display: inline-block" /><img
+                class="arrow"
+                id="features-up"
+                src="./images/icon-arrow-up.svg"
+                style="display: none"
+            /></a>
+            <ul class="dropdown" id="features">
+              <li class="dropdown-item">
+                <img class="dropdown-icon" src="./images/icon-todo.svg" />Todo
+                List
+              </li>
+              <li class="dropdown-item">
+                <img
+                  class="dropdown-icon"
+                  src="./images/icon-calendar.svg"
+                />Calendar
+              </li>
+              <li class="dropdown-item">
+                <img
+                  class="dropdown-icon"
+                  src="./images/icon-reminders.svg"
+                />Reminders
+              </li>
+              <li class="dropdown-item">
+                <img
+                  class="dropdown-icon"
+                  src="./images/icon-planning.svg"
+                />Planning
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#" onclick="handleDropdown('company')"
+              >Company<img
+                class="arrow"
+                id="company-down"
+                src="./images/icon-arrow-down.svg"
+                style="display: inline-block" /><img
+                class="arrow"
+                id="company-up"
+                src="./images/icon-arrow-up.svg"
+                style="display: none"
+            /></a>
+            <ul class="dropdown" id="company">
+              <li class="dropdown-item no-icon">History</li>
+              <li class="dropdown-item no-icon">Our Team</li>
+              <li class="dropdown-item no-icon">Blog</li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Careers</a></li>
+          <li class="menu-item"><a href="#">About</a></li>
+        </ul>
+        <div class="desktop-buttons">
+          <button class="btn-login">Login</button>
+          <button class="btn-register">Register</button>
+        </div>
       </nav>
-      <img
-        src="./images/image-hero-mobile.png"
-        alt=""
-        class="hero-image-mobile"
-      />
-      <div class="hero-text">
-        <h1 class="header">Make remote work</h1>
-        <p class="subheader">
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-      </div>
-      <button class="button">Learn more</button>
-      <div class="clients">
-        <img src="./images/client-databiz.svg" alt="" class="client-img" /><img
-          src="./images/client-audiophile.svg"
+      <div class="desktop">
+        <img
+          src="./images/image-hero-mobile.png"
           alt=""
-          class="client-img"
-        /><img src="./images/client-meet.svg" alt="" class="client-img" /><img
-          src="./images/client-maker.svg"
-          alt=""
-          class="client-img"
+          class="hero-image-mobile"
         />
+        <div class="desktop-left">
+          <div class="hero-text">
+            <h1 class="header">Make remote work</h1>
+            <p class="subheader">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+          </div>
+
+          <button class="button">Learn more</button>
+          <div class="clients">
+            <img
+              src="./images/client-databiz.svg"
+              alt=""
+              class="client-img"
+            /><img
+              src="./images/client-audiophile.svg"
+              alt=""
+              class="client-img"
+            /><img
+              src="./images/client-meet.svg"
+              alt=""
+              class="client-img"
+            /><img src="./images/client-maker.svg" alt="" class="client-img" />
+          </div>
+        </div>
+        <img src="./images/image-hero-desktop.png" class="hero-image-desktop" />
       </div>
     </div>
   </body>
