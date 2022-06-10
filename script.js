@@ -15,3 +15,12 @@ const closeMenuHandler = () => {
   shadow.style.visibility = "hidden";
   shadow.style.opacity = 0;
 };
+
+const handleDropdown = (id) => {
+  const dropdown = document.getElementById(id);
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+};

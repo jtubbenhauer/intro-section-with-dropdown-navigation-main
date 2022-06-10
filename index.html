@@ -23,6 +23,31 @@
         <button class="close-button" onclick="closeMenuHandler()">
           <img src="./images/icon-close-menu.svg" alt="" class="close-menu" />
         </button>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="#" onclick="handleDropdown('features')"
+              >Features
+              <img
+                id="features-down"
+                src="./images/icon-arrow-down.svg"
+                style="display: inline-block" /><img
+                id="features-up"
+                src="./images/icon-arrow-up.svg"
+                style="display: none"
+            /></a>
+            <ul class="dropdown" id="features">
+              <li class="menu-item">Todo List</li>
+              <li class="menu-item">Calendar</li>
+              <li class="menu-item">Reminders</li>
+              <li class="menu-item">Planning</li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Company</a></li>
+          <li class="menu-item"><a href="#">Careers</a></li>
+          <li class="menu-item"><a href="#">About</a></li>
+        </ul>
+        <button class="btn-login">Login</button>
+        <button class="btn-register">Register</button>
       </div>
       <div class="shadow" id="shadow"></div>
       <nav class="navbar">
