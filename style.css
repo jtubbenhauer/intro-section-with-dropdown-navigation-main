@@ -225,7 +225,7 @@ button.button {
 
   .desktop {
     flex-direction: row;
-    width: 90vw;
+    width: 100vw;
     align-items: center;
     margin-top: 2rem;
     justify-content: space-evenly;
