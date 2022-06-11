@@ -206,13 +206,20 @@ button.button {
   display: none;
 }
 
+/* ------------- DESKTOP ------------------- */
+
 @media screen and (min-width: 801px) {
+  a:hover {
+    color: var(--almost-black);
+  }
+
   .hamburger {
     display: none;
   }
 
   .navbar {
     display: flex;
+    width: 100%;
     justify-content: start;
   }
 
@@ -220,6 +227,7 @@ button.button {
     flex-direction: row;
     width: 90vw;
     align-items: center;
+    margin-top: 2rem;
     justify-content: space-evenly;
     height: 500px;
   }
@@ -247,11 +255,12 @@ button.button {
 
   .hero-text {
     text-align: left;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   h1.header {
     font-size: 4.2rem;
+    max-width: 450px;
     padding-bottom: 2rem;
   }
 
@@ -266,7 +275,64 @@ button.button {
     margin-left: auto;
   }
 
+  .btn {
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    color: var(--almost-black);
+  }
+
   .menu-item {
     padding: 0;
+  }
+
+  ul.menu-items.desktop-menu {
+    align-items: center;
+    margin: 0;
+    padding-left: 4rem;
+    padding-top: 0;
+    width: 450px;
+    justify-content: space-between;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .dropdown-desktop {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: var(--almost-white);
+    box-shadow: 0 0 30px rgb(201, 201, 201);
+    border-radius: 10px;
+    position: fixed;
+    list-style: none;
+    display: none;
+  }
+
+  .dropdown-desktop#features-desktop {
+    transform: translateX(-4rem);
+  }
+
+  img.dropdown-icon {
+    margin-left: 0.5rem;
+  }
+
+  li.dropdown-item {
+    display: flex;
+    padding: 0 1rem 1rem 0;
+    align-items: center;
+  }
+
+  .button {
+    cursor: pointer;
+  }
+
+  .button:hover {
+    color: var(--almost-black);
+    font-weight: bold;
+    border: 1px solid var(--almost-black);
+    background-color: var(--almost-white);
   }
 }
